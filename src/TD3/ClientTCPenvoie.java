@@ -10,11 +10,11 @@ public class ClientTCPenvoie {
 
     public static void main(String[] args) throws Exception
     {
-        TD3.ClientTCP clientTCP = new TD3.ClientTCP();
-        clientTCP.execute();
+        TD3.ClientTCPenvoie clientTCPenvoie = new TD3.ClientTCPenvoie();
+        clientTCPenvoie.execute();
     }
 
-    private void execute() throws IOException
+    private static void execute() throws IOException
     {
         //
         System.out.println("Demarrage du client ...");
@@ -31,22 +31,8 @@ public class ClientTCPenvoie {
         OutputStream os = socket.getOutputStream();
         os.write(bufE);
         System.out.println("Message envoye");
-
-//        // Attente de la reponse
-//        byte[] bufR = new byte[2048];
-//        InputStream is = socket.getInputStream();
         socket.close();
-//        byte[] bufR = new byte[2048];
-//        int lenBufR = is.read(bufR);
-//
-//        if (lenBufR!=-1)
-//        {
-//            String reponse = new String(bufR, 0 , lenBufR );
-//            System.out.println("Reponse recue = "+reponse);
-//        }
-
-//        // Fermeture de la socket
-//        socket.close();
         System.out.println("Arret du client .");
+
     }
 }

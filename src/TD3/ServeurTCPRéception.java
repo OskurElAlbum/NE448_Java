@@ -49,7 +49,7 @@ public class ServeurTCPRéception {
 
 
         // Emission d'un message en retour
-        byte[] bufE = new String("Oui").getBytes();
+        byte[] bufE = new String("Non").getBytes();
         OutputStream os = socketConnexion.getOutputStream();
         os.write(bufE);
         System.out.println("Message envoye = OUI");
