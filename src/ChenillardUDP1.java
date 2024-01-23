@@ -1,6 +1,5 @@
+import javax.swing.*;
 import java.awt.*;
-import javax.swing.JFrame;
-import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetSocketAddress;
