@@ -1,0 +1,2 @@
+nc -lu 2000
+echo "Votre message" | nc -u 127.0.0.1 2000
