@@ -1,2 +1,11 @@
-nc -lu 2000
+
+//UDP
+nc -lu -p 2000
+netcat -u 172.20.11.4 2000
+
+//TCP
+nc -l -p 2000
+netcat 127.0.0.1 2000
+
+//UDP + message
 echo "Votre message" | nc -u 127.0.0.1 2000
